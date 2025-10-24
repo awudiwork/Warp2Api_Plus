@@ -532,13 +532,13 @@ async def main():
         return
 
     # 启动服务
-    config = uvicorn.Config(
+    uvicorn_config = uvicorn.Config(
         app=app,
         host=config.POOL_SERVICE_HOST,
         port=config.POOL_SERVICE_PORT,
         log_level=config.LOG_LEVEL.lower()
     )
-    server = uvicorn.Server(config)
+    server = uvicorn.Server(uvicorn_config)
     await server.serve()
 
 

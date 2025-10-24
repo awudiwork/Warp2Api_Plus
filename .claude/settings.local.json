@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(conda activate:*)",
+      "Bash(conda run:*)",
+      "Bash(dir:*)",
+      "Bash(python -c:*)",
+      "Bash(mkdir:*)",
+      "Bash(findstr:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
